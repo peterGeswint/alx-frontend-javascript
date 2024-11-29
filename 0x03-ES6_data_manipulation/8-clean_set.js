@@ -1,5 +1,4 @@
 export default function cleanSet(set, startString) {
-  
   if (typeof startString !== 'string') {
     return '';
   }
@@ -9,7 +8,7 @@ export default function cleanSet(set, startString) {
   }
 
   return [...set]
-    .filter(value => value.startsWith(startString)) 
-    .map(value => value.slice(startString.length))   
-    .join('-');                                      
+    .filter((value) => value.startsWith(startString))
+    .map((value) => value.slice(startString.length))
+    .join('-');
 }
